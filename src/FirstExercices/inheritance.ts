@@ -9,9 +9,9 @@ abstract class Pessoa {
 }
 
 class Fisica extends Pessoa {
-    public cpf: string;
-    public rg: string;
-    public dataNascimento: Date;
+    protected cpf: string;
+    protected rg: string;
+    protected dataNascimento: Date;
 
     constructor(nome: string, telefone: string, cpf: string, rg: string, dataNascimento: Date){
         super(nome, telefone)
